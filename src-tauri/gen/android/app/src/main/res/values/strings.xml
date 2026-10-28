@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Расписание РИНХ</string>
+    <string name="main_activity_title">Расписание РИНХ</string>
+    <string name="developer_name">Fresh Milkshake</string>
+    <string name="app_description">Расписание РГЭУ (РИНХ): занятия, недели и уведомления. Разработчик Fresh Milkshake.</string>
+    <string name="app_copyright">© 2026 Fresh Milkshake</string>
+</resources>

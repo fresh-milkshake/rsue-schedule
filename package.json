@@ -1,0 +1,37 @@
+{
+  "name": "rsue-schedule",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Расписание РГЭУ (РИНХ): занятия, недели и локальные уведомления.",
+  "author": { "name": "Fresh Milkshake", "url": "https://github.com/fresh-milkshake" },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "icons": "node scripts/brand-assets.mjs && tauri icon branding/icon-manifest.json && node scripts/brand-assets.mjs --sync",
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "tauri": "tauri",
+    "android:init": "node scripts/android.mjs init",
+    "android:dev": "node scripts/android.mjs dev",
+    "android:build": "node scripts/android.mjs build --apk --target aarch64",
+    "android:debug": "node scripts/android.mjs build --apk --target aarch64 --debug",
+    "android:sign": "node scripts/sign-apk.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/golos-text": "^5.2.8",
+    "@fontsource/doto": "^5.2.2",
+    "@fontsource/space-grotesk": "^5.2.10",
+    "@fontsource/space-mono": "^5.2.10",
+    "@tauri-apps/api": "^2.10.1",
+    "@tauri-apps/plugin-notification": "^2.8.0",
+    "@tauri-apps/plugin-opener": "^2.5.3"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^3.2.4"
+  }
+}
